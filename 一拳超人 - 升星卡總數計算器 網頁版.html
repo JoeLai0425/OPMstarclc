@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>
+function calc(){
+var a1=document.getElementById('a1').value;
+var a2=document.getElementById('a2').value;
+var a3=document.getElementById('a3').value;
+var a4=document.getElementById('a4').value;
+var a5=document.getElementById('a5').value;
+var a6=document.getElementById('a6').value;
+var o1=document.getElementById('o1').value;
+var o2=document.getElementById('o2').value;
+var o3=document.getElementById('o3').value;
+var o4=document.getElementById('o4').value;
+var o5=document.getElementById('o5').value;
+var o6=document.getElementById('o6').value;
+var p1=document.getElementById('p1').value;
+var p2=document.getElementById('p2').value;
+var p3=document.getElementById('p3').value;
+var p4=document.getElementById('p4').value;
+var p5=document.getElementById('p5').value;
+var p6=document.getElementById('p6').value;
+var m3=document.getElementById('m3').value;
+var m6=document.getElementById('m6').value;
+var m15=document.getElementById('m15').value;
+var ot1=document.getElementById('ot1').value;
+var ot2=document.getElementById('ot2').value;
+var ot3=document.getElementById('ot3').value;
+var ot4=document.getElementById('ot4').value;
+var ot5=document.getElementById('ot5').value;
+var ot6=document.getElementById('ot6').value;
+var bag=document.getElementById('bag').value;
+
+var tt= parseInt(a1)+parseInt(a2)*3+parseInt(a3)*7+parseInt(a4)*15+parseInt(a5)*31+parseInt(a6)*55+parseInt(o1)*2+parseInt(o2)*6+parseInt(o3)*14+parseInt(o4)*30+parseInt(o5)*54+parseInt(o6)*86+parseInt(p1)*1+parseInt(p2)*4+parseInt(p3)*10+parseInt(p4)*22+parseInt(p5)*38+parseInt(p6)*70+parseInt(m3)*3+parseInt(m6)*6+parseInt(m15)*15+parseInt(ot1)*2+parseInt(ot2)*6+parseInt(ot3)*14+parseInt(ot4)*30+parseInt(ot5)*54+parseInt(ot6)*86+parseInt(bag);
+document.getElementById('tt').innerHTML=tt;
+return false
+}
+</script>
+
+<center><H1>一拳超人 - 升星卡總數計算器 網頁版</H1>
+<form >
+  <label for="a1">專屬1星:</label>
+  <input type="number" id="a1" name="a1" value="0"><br><br>
+  <label for="a2">專屬2星:</label>
+<input type="number" id="a2" name="a2" value="0"><br><br>
+<label for="a3">專屬3星</label>
+  <input type="number" id="a3" name="a3" value="0"><br><br>
+  <label for="a4">專屬4星</label>
+  <input type="number" id="a4" name="a4" value="0"><br><br>
+  <label for="a5">專屬5星</label>
+  <input type="number" id="a5" name="a5" value="0"><br><br>
+  <label for="a6">專屬6星</label>
+  <input type="number" id="a6" name="a6" value="0"><br><br>
+  <label for="o1">橙裝備1星</label>
+  <input type="number" id="o1" name="o1" value="0"><br><br>
+  <label for="o2">橙裝備2星</label>
+  <input type="number" id="o2" name="o2" value="0"><br><br>
+  <label for="o3">橙裝備3星</label>
+  <input type="number" id="o3" name="o3" value="0"><br><br>
+  <label for="o4">橙裝備4星</label>
+  <input type="number" id="o4" name="o4" value="0"><br><br>
+  <label for="o5">橙裝備5星</label>
+  <input type="number" id="o5" name="o5" value="0"><br><br>
+  <label for="o6">橙裝備6星</label>
+  <input type="number" id="o6" name="o6" value="0"><br><br>
+  <label for="p1">紫裝備1星</label>
+  <input type="number" id="p1" name="p1" value="0"><br><br>
+  <label for="p2">紫裝備2星</label>
+  <input type="number" id="p2" name="p2" value="0"><br><br>
+  <label for="p3">紫裝備3星</label>
+  <input type="number" id="p3" name="p3" value="0"><br><br>
+  <label for="p4">紫裝備4星</label>
+  <input type="number" id="p4" name="p4" value="0"><br><br>
+  <label for="p5">紫裝備5星</label>
+  <input type="number" id="p5" name="p5" value="0"><br><br>
+  <label for="p6">紫裝備6星</label>
+  <input type="number" id="p6" name="p6" value="0"><br><br>
+  <label for="m3">初級天賦印記</label>
+  <input type="number" id="m3" name="m3" value="0"><br><br>
+  <label for="m6">中級天賦印記</label>
+  <input type="number" id="m6" name="m6" value="0"><br><br>
+  <label for="m15">高級天賦印記</label>
+  <input type="number" id="m15" name="m15" value="0"><br><br>
+  <label for="ot1">橙增幅卡1星</label>
+  <input type="number" id="ot1" name="ot1" value="0"><br><br>
+  <label for="ot2">橙增幅卡2星</label>
+  <input type="number" id="ot2" name="ot2" value="0"><br><br>
+  <label for="ot3">橙增幅卡3星</label>
+  <input type="number" id="ot3" name="ot3" value="0"><br><br>
+  <label for="ot4">橙增幅卡4星</label>
+  <input type="number" id="ot4" name="ot4" value="0"><br><br>
+  <label for="ot5">橙增幅卡5星</label>
+  <input type="number" id="ot5" name="ot5" value="0"><br><br>
+  <label for="ot6">橙增幅卡6星</label>
+  <input type="number" id="ot6" name="ot6" value="0"><br><br>
+  <label for="bag">背包</label>
+  <input type="number" id="bag" name="bag" value="0"><br><br>
+  <input type="button" onClick="calc()" value="計算" />
+</form>
+<div id="tt"></div>
+</center>
+</html>
