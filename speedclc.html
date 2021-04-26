@@ -11,11 +11,14 @@ var bottomright=document.getElementById('bottomright').value;
 var clothset=document.getElementById('clothset').value;
 var realtime=document.getElementById('realtime').value;
 var trainlv=document.getElementById('trainlv').value;
+var speedcard=document.getElementById('speedcard').value;
 
 
 var totalspeed = parseInt(topleft)+parseInt(topright)+parseInt(bottomleft)+parseInt(bottomright)+parseInt(trainlv)+180+50+100;
-var extraspeed = 1.1+ parseFloat(clothset) + parseFloat(realtime);
+var extraspeed = 1.1+ parseFloat(clothset) + parseFloat(realtime)+parseFloat(speedcard);
 var result = parseInt(totalspeed)*parseFloat(extraspeed);
+var result = Math.round(result);
+   
 
 document.getElementById('result').innerHTML=result;
 
@@ -117,10 +120,16 @@ return false
     <option value="42">14</option>
     <option value="45">15</option>
   </select> <br><br></td>
-      <td></td>
-  <td><input type="button" onClick="calc()" value="計算" /></td></tr>
+      <td>增幅卡</td>
+  <td><select id="speedcard" name="speedcard">
+    <option value="0">0速度加成</option>
+    <option value="0.12">1速度加成</option>
+    <option value="0.24">2速度加成</option>
+    <option value="0.36">3速度加成</option>
+  </select> <br><br></td></tr>
       </table>
    </form>
+  <input type="button" onClick="calc()" value="計算" />
 <table><tr><td><H3>你的極限甜心速度是:</H3></td><td><H3 id="result"></H3></td></tr></table>
 <table><tr><td><H3>加成百分比:</H3></td><td><H3 id="extraresult"></H3></td></tr></table>
 </center>
