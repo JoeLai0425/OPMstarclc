@@ -14,8 +14,8 @@ var trainlv=document.getElementById('trainlv').value;
 
 
 var totalspeed = parseInt(topleft)+parseInt(topright)+parseInt(bottomleft)+parseInt(bottomright)+parseInt(trainlv)+180+50+100;
-var extraspeed = 1.1+parseInt(clothset)+parseInt(realtime);
-var result = parseInt(totalspeed)*parseInt(extraspeed);
+var extraspeed = 1.1+ clothset + realtime;
+var result = parseInt(totalspeed)*extraspeed;
 
 document.getElementById('result').innerHTML=result;
 return false
